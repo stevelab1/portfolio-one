@@ -152,27 +152,27 @@ p {
 
 #massage {
   grid-area: massage;
-  background-image: url("../images/bookcases@2x.png");
+  background-image: url("./images/bookcases@2x.png");
 }
 
 #behavioural {
   grid-area: behavioural;
-  background-image: url("../images/beds@2x.png");
+  background-image: url("./images/beds@2x.png");
 }
 
 #wellbeing {
   grid-area: wellbeing;
-  background-image: url("../images/couch@2x.png");
+  background-image: url("./images/couch@2x.png");
 }
 
 #author {
   grid-area: author;
-  background-image: url("../images/patio@2x.png");
+  background-image: url("./images/patio@2x.png");
 }
 
 #todo {
   grid-area: todo;
-  background-image: url("../images/desks@2x.png");
+  background-image: url("./images/desks@2x.png");
 }
 
 .categoryGridArea {
