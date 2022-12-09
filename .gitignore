@@ -1,13 +1,3 @@
-# exclude everything
-images/*
-
-# exception to the rule
-!images/bookcases@2x.png
-!images/beds@2x.png
-!images/couch@2x.png
-!images/patio@2x.png
-!images/desks@2x.png
-
 # exclude reference files
 instructions.md
 
