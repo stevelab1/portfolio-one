@@ -10,9 +10,22 @@
 
 body {
   margin: 0;
-  padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
+}
+
+nav a {
+  font-size: 1.3rem;
+  color: #0c0e16;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 0.4rem;
+  text-decoration-thickness: 3px;
+}
+
+h1 {
+  font-size: 2em;
+  display: ;
 }
 
 h1,
@@ -24,14 +37,6 @@ h6 {
   margin: 5px 0;
 }
 
-/* Typography CSS */
-
-/* h2 {
-  font-size: 60px;
-  margin: 0px 0px;
-  color: #FF6200;
-} */
-
 h3 {
   display: flex;
   font-size: 28px;
@@ -40,28 +45,32 @@ h3 {
   margin: 0px 9px 0px 0px;
 }
 
-/* h4 {
-  color: white;
-  font-weight: 400;
-  font-size: 22px;
-} */
+.hero-banner{
+  /* container */
+  height: 35vh;
+  width: 100vw;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  /* background */
+  background-image: url("./images/dystopian_westland_by_darthmikkey_deq102n.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
 
+.hero-banner h2{
+  margin: 3vh;
+  padding: 1vh;
+  float: right;
+  color: whitesmoke;
 
-/* #headline p {
-  max-width: 350px;
-  font-size: 16px;
-  font-weight: 300;
-  margin: 0px 0px;
-  color: #636364;
-} */
+}
 
 p {
   margin: 0;
 } 
-
-/* body {
-  font-family: 'Poppins', sans-serif;
-} */
 
 .page-section {
   display: flex;
@@ -134,8 +143,6 @@ p {
   position: relative;
 }
 
-
-
 /* Category Grid CSS */
 
 #categoryGrid {
@@ -198,8 +205,10 @@ p {
 /* Navigation CSS using Flex */
 
 #navigation, #contact a {
-  /* color: #92CCCE; */
   cursor: pointer;
+  color: #0c0e16;
+  justify-content: space-around;
+
   text-decoration: underline;
   text-underline-offset: 0.4rem;
   text-decoration-thickness: 3px;
@@ -210,11 +219,9 @@ p {
   font-weight: 500;
 }
 
-
-
 @media only screen and (min-width: 800px) {
   
-  #navBar, #contact {
+  #navBar {
     display: flex;
     flex-direction: row;
     margin: 0px 5%;
@@ -235,18 +242,13 @@ p {
 
 @media only screen and (max-width: 800px) {
 
-  #navBar, #contact {
+  #navBar {
     display: flex;
     flex-direction: column;
     margin: 0; 
   }
 
-  #navBar h1 {
-    /* display: flex; */
-    font-weight: 500;
-    margin: auto;
-    background-color: azure;
-  }
+ 
 
   #navigation {
     display: flex;
@@ -281,7 +283,7 @@ p {
 
 @media only screen and (max-width: 400px) {
 
-  #navBar, #contact {
+  #navBar {
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -299,7 +301,6 @@ p {
   #navigation {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
     width: 400px;
     background-color: rgb(255, 255, 240);
   }
