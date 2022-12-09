@@ -3,20 +3,20 @@
 
 <head>
   <meta name="viewport" content="width=device-width">
-  <link href="css/style.css" rel="stylesheet" type="text/css">
-  <title>Stephen Tallett Web Dev</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <title>CSS Portfolio</title>
 </head>
 
 <body>
   <header>
     <!-- main logo / nav -->
     <nav id="navBar">
-      <h1>Stephen Tallett</h1>
+      <h1>Stevelabs</h1>
       <div id="navigation">
-        <p>About Me</p>
-        <p>Work</p>
-        <p>Contact Me</p>
-        <p>Resume</p>
+        <a href="#about">About Me</p>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact Me</a>
+        <a href="#skills">Skills</a>
       </div>
     </nav>
 
@@ -31,18 +31,23 @@
 
   <main class="page-wrapper">
     <!-- about me -->
-    <section class="page-section" id="about">
-      <h3>About Me</h3>
-      <p>lorem ipsum dolor sit amet, consectetur adipisicing</p>
-      <p>lorem ipsum dolor sit amet, consectetur adipisicing</p>
-    </section>
+    <section class="page-section" >
+      <div class="sub-heading">
+        <h3>About Me</h3>
+      </div>
+      <section id="about" class="sub-section">
+        <p>lorem ipsum dolor sit amet, consectetur adipisicing</p>
+        <p>lorem ipsum dolor sit amet, consectetur adipisicing</p>
+      </section>
 
+    </section>
+<br />
     <!-- portfolio container -->
     <section class="page-section">
-      <div class="sub-heading">
+      <div class="sub-heading" id="work" >
         <h3>Work</h3>
       </div>
-      <section id="categoryGrid">
+      <section id="categoryGrid" class="sub-section">
         <div id="massage" class="categoryGridArea">
           <div class="heading">Dee Occupational and Sports Massage</div>
         </div>
@@ -50,7 +55,7 @@
           <div class="heading">Health & Behavioural Science Consultancy</div>
         </div>
         <div id="wellbeing" class="categoryGridArea">
-          <div class="heading">Psychological Wellbeing Practitioner</div>
+          <div class="heading">Media and Entertainment TBA</div>
         </div>
         <div id="author" class="categoryGridArea">
           <div class="heading">Author Site</div>
@@ -60,12 +65,29 @@
         </div>
       </section>
     </section>
+    
+    <br>
+    <!-- skills -->
+    <section class="page-section" >
+      <div class="sub-heading">
+        <h3>Skills</h3>
+      </div>
+      <section id="skills" class="sub-section">
+        <p>lorem ipsum dolor sit amet, consectetur adipisicing</p>
+        <p>lorem ipsum dolor sit amet, consectetur adipisicing</p>
+      </section>
+    </section>
 
-
-  
-     <!-- contact -->
-    <section class="page-section contact" id="contact">
-      <h2>Contact Me</h2>
+    <br>
+    <!-- contact -->
+    <section class="page-section" >
+      <div class="sub-heading">
+        <h3>Contact Me</h3>
+      </div>
+      <section id="contact" class="sub-section">
+        <p>lorem ipsum dolor sit amet, consectetur adipisicing</p>
+        <p>lorem ipsum dolor sit amet, consectetur adipisicing</p>
+      </section>
     </section>
   </main>
 </body>

@@ -1,4 +1,10 @@
+:root {
+  /* declare a variable with `--` syntax */
+  --margin: 5px;
+}
+
 * {
+/* combine box-sizing with widths to aid responsiveness */
   box-sizing: border-box;
 }  
 
@@ -60,7 +66,7 @@ p {
 .page-section {
   display: flex;
   flex-direction: row;
-  margin: 0px 5%;
+  margin: 0px 0px 0px 16px;
 }
 
 .page-section .sub-heading {
@@ -68,12 +74,14 @@ p {
 }
 
 .sub-heading {
-
   border-right: 2px solid black;
   width: 200px;
   margin: 0% 0% 0% 0%;
 }
 
+#about, #contact, #skills  {
+ margin: var(--margin);
+}
 
 /* Grid CSS */
 
@@ -126,10 +134,11 @@ p {
   position: relative;
 }
 
+
+
 /* Category Grid CSS */
 
 #categoryGrid {
-  margin: 0px 0px 0px 16px;
   display: grid;
   grid-template-rows: 150px 150px 125px 125px;
   grid-template-columns: 1fr 1fr;
@@ -170,7 +179,7 @@ p {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  margin: 5px;
+  margin: var(--margin);
   cursor: pointer;
   display: grid;
   align-content: end;
@@ -178,7 +187,7 @@ p {
 
 .heading {
   background-color: rgba(0,0,0,0.7);
-  padding: 15px;
+  padding: 0.5em 2em 2em 0.5em;
   height: 25px;
   color: white;
   font-size: 18px;
@@ -188,7 +197,7 @@ p {
 
 /* Navigation CSS using Flex */
 
-#navigation p {
+#navigation a {
   /* color: #92CCCE; */
   cursor: pointer;
   text-decoration: underline;
